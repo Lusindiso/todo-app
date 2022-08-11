@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styles from './TodoItem.module.css';
 
 const TodoItem = ({
+  // eslint-disable-next-line react/prop-types
   handleChangeProps, deleteTodoProps, setUpdate, todo,
 }) => {
   const [editing, setEditing] = useState(false);
@@ -23,6 +24,7 @@ const TodoItem = ({
     textDecoration: 'line-through',
   };
 
+  // eslint-disable-next-line react/prop-types
   const { completed, id, title } = todo;
 
   const viewMode = {};

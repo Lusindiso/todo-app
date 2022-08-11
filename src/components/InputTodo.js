@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+// eslint-disable-next-line react/prop-types
 const InputTodo = ({ addTodoProps }) => {
   const [inputText, setInputText] = useState({
     title: '',
